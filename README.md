@@ -1,50 +1,68 @@
-# Welcome to your Expo app 👋
+# 📏 Calculadora de Bitola de Cabos Elétricos
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Um aplicativo React Native para cálculo da bitola adequada de cabos elétricos de cobre conforme a distância e corrente necessárias.
 
-## Get started
+### 📋 Funcionalidades
+✅ Cálculo preciso da bitola para tensões 127V e 220V
+✅ Interface simples e intuitiva
+✅ Fórmulas técnicas corretas para dimensionamento elétrico
+✅ Exibição de resultados com 2 casas decimais
+✅ Design responsivo para todos os dispositivos
 
-1. Install dependencies
+### ⚙️ Fórmulas Utilizadas
+Para cabos de cobre em instalações residenciais:
 
-   ```bash
-   npm install
-   ```
+Para 127V:
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+bitola = (2 × corrente × distância) / 294.64
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Para 220V:
 
-## Learn more
+```text
+bitola = (2 × corrente × distância) / 510.4
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Onde:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+corrente = corrente elétrica em amperes (A)
+distância = comprimento do cabo em metros (m)
 
-## Join the community
+### 🚀 Como Executar
+Clone o repositório
 
-Join our community of developers creating universal apps.
+```bash
+git clone https://github.com/seu-usuario/calculadora-bitola.git
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Instale as dependências
+
+```bash
+npm install
+```
+ou
+```bash
+yarn install
+```
+
+### Execute o aplicativo
+
+```bash
+npm start
+```
+ ou
+```bash
+yarn start
+```
+
+### 📱 Plataformas Suportadas
+- Android
+- iOS
+- Web (via React Native Web)
+
+### 🛠️ Tecnologias Utilizadas
+- React Native
+- TypeScript
+- React Navigation 
+- Expo
