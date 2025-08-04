@@ -4,9 +4,13 @@
 
 ### 📋 Funcionalidades
 ✅ Cálculo preciso da bitola para tensões 127V e 220V
+
 ✅ Interface simples e intuitiva
+
 ✅ Fórmulas técnicas corretas para dimensionamento elétrico
+
 ✅ Exibição de resultados com 2 casas decimais
+
 ✅ Design responsivo para todos os dispositivos
 
 ### ⚙️ Fórmulas Utilizadas
